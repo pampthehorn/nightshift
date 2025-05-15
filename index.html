@@ -1,13 +1,19 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"> -->
 <meta name="msapplication-TileColor" content="#ffc40d">
 <meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" href="/favi/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favi/favicon.svg" />
+<link rel="shortcut icon" href="/favi/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favi/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Nightshift" />
+<link rel="manifest" href="/favi/site.webmanifest" />
       
 <meta name="description" content="Nightshift ~ Band from Glasgow, Scotland. Official Gig, Tour and Release Information.">
     
@@ -28,9 +34,10 @@
 <link rel="me" href="https://twitter.com/Nightshiftgroup">
 <link rel="me" href="https://www.facebook.com/nightshiftisaband/">
 <link rel="me" href="https://open.spotify.com/artist/6PHMj4Jd6SIlFtno7Gdn0g">
+<link rel="me" href="https://bsky.app/profile/nightshiftband.bsky.social">
 
 </head>
-  <title>Nightshift ~ Band in Glasgow, Scotland ~ Trouble in Mind Records</title>
+  <title>Nightshift ~ Band in Glasgow, Scotland</title>
 <style>
 
 body{
@@ -70,10 +77,59 @@ ul {
   
 }
 
-li:nth-child(odd) {
-  background-color: lightgoldenrodyellow;
+#gigs li:nth-child(odd) {
+  background-color: #89ffff;
   width: fit-content;
 }
+
+.social-icons-list {
+            list-style: none; /* Removes bullet points */
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Centers the icons */
+            align-items: center;
+        }
+ul.social-icons-list{
+  width:100%;
+max-width: 100%;
+}
+        .social-icons-list li {
+            margin-left: 8px; /* Adjust for desired spacing, sm:space-x-6 had larger spacing on small screens */
+            margin-right: 8px;
+            background-color:transparent;
+        }
+
+        /* Individual Icon Link Styling */
+        .social-icon-link {
+            display: inline-block; /* Allows for transformations and better spacing control */
+            transition: opacity 0.2s ease-in-out; /* Equivalent to transition-opacity duration-200 */
+        }
+
+        .social-icon-link:hover {
+            opacity: 0.75; /* Equivalent to hover:opacity-75 */
+        }
+
+        /* SVG Icon Image Styling */
+        .social-icon-svg {
+            height: 24px; /* Equivalent to h-6 */
+            width: 24px; /* Equivalent to w-6 */
+            border-radius: 0.25rem; /* Equivalent to rounded, if you want rounded corners on the SVGs themselves */
+            display: block; /* Removes any extra space below the image */
+        }
+        
+  
+        /* Responsive adjustments for icon size and spacing (optional, like sm:h-7) */
+        @media (min-width: 640px) { /* Tailwind's 'sm' breakpoint */
+            .social-icons-list li {
+                margin-left: 12px; /* Larger spacing on small screens and up */
+                margin-right: 12px;
+            }
+            .social-icon-svg {
+                height: 28px; /* Equivalent to sm:h-7 */
+                width: 28px; /* Equivalent to sm:w-7 */
+            }
+        }
 
 </style>
 
@@ -103,7 +159,7 @@ li:nth-child(odd) {
 <img src="posters/nightshift-summer-tour-2025-horsegirl.jpg" alt="nightshift summer tour 2025 with horsegirl" />
 </div>
 
-<ul>
+<ul id="gigs">
 
 
 
@@ -114,7 +170,7 @@ li:nth-child(odd) {
     <strong>Sat 14th June 2025</strong> - Jardin Moderne, <strong>Rennes</strong>, France [Pies Pala Pop Festival]<br>
   </li>
     <li>
-      <strong>Sun 15th June 2025</strong> - Le Coquelicot, 18 Rue de Vitré, 35300<strong>Fougères</strong>, France<br>
+      <strong>Sun 15th June 2025</strong> - Le Coquelicot, 18 Rue de Vitré, 35300 <strong>Fougères</strong>, France<br>
     </li>
   <li>
     <strong>Mon 16th June 2025</strong> - Bumann and Sohn, <strong>Cologne</strong>, Germany w/ Horsegirl<br>
@@ -142,18 +198,17 @@ li:nth-child(odd) {
 
 
 
-<h5>Homosapien</h5>
-<p>Our record <strong>Homosapien</strong> is out now on Trouble in Mind Records!</p>
-<iframe style="border: 0; width: 350px; height: 786px;"
+<p>Our new record <strong>Homosapien</strong> is out now on Trouble in Mind Records!</p>
+<!-- <iframe style="border: 0; width: 350px; height: 786px;"
   src="https://bandcamp.com/EmbeddedPlayer/album=163025827/size=large/bgcol=ffffff/linkcol=f171a2/transparent=true/"
-  seamless><a href="https://nightshiftgroup.bandcamp.com/album/homosapien">Homosapien by Nightshift</a></iframe>
+  seamless><a href="https://nightshiftgroup.bandcamp.com/album/homosapien">Homosapien by Nightshift</a></iframe> -->
 
 <p><iframe width="560" height="315" style="max-width:100%;" src="https://www.youtube.com/embed/zO1BJcEN8wE?si=daMfGjB9gMiwC0q3"
   title="YouTube video player" frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
 <ul>
-<li><a href="https://troubleinmindrecords.com/products/nightshift-homosapien" target="_blank">Buy now from Trouble in Mind</a>
+<li><a href="https://troubleinmindrecords.com/products/nightshift-homosapien" target="_blank">Buy now from Trouble in Mind Records</a>
 <li><a href="https://nightshiftgroup.bandcamp.com/album/homosapien" target="_blank">Buy now on Bandcamp</a></li>
  
 </ul>
@@ -276,18 +331,88 @@ li:nth-child(odd) {
 
 </div>
 
-<ul>
-  <li><a href="https://troubleinmindrecords.com/products/nightshift-made-of-the-earth-cs">Trouble in Mind Records</a></li>
 
-  <li><a href="https://bsky.app/profile/nightshiftband.bsky.social">Nightshift on Bluesky</a></li>
+
+<ul class="social-icons-list">
+
+  <li>
+      <a href="https://bsky.app/profile/nightshiftband.bsky.social" 
+         title="Nightshift on Bluesky" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="social-icon-link">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg" 
+               alt="Bluesky logo" 
+               class="social-icon-svg">
+      </a>
+  </li>
+  <li>
+      <a href="https://nightshiftgroup.bandcamp.com/" 
+         title="Nightshift on Bandcamp" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="social-icon-link">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Bandcamp-bc-logotype-color.svg" 
+               alt="Bandcamp icon" 
+               class="social-icon-svg">
+      </a>
+  </li>
+  <li>
+      <a href="https://www.instagram.com/wearethebandcallednightshift/" 
+         title="Nightshift's Instagram" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="social-icon-link">
+          <img src="https://s.magecdn.com/social/tc-instagram.svg" 
+               alt="Instagram icon" 
+               class="social-icon-svg">
+      </a>
+  </li>
+  <li>
+      <a href="https://twitter.com/Nightshiftgroup" 
+         title="Nightshift on 🍆 🚀" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="social-icon-link">
+          <img src="https://s.magecdn.com/social/tc-twitter.svg" 
+               alt="X (Twitter) icon" 
+               class="social-icon-svg">
+      </a>
+  </li>
+  <li>
+      <a href="https://www.facebook.com/nightshiftisaband/" 
+         title="Nightshift on Meta's Facebook" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="social-icon-link">
+          <img src="https://s.magecdn.com/social/tc-facebook.svg" 
+               alt="Facebook icon" 
+               class="social-icon-svg">
+      </a>
+  </li>
+  <li>
+      <a href="https://linktr.ee/nightshiftensemble" 
+         title="Nightshift's LinkTree for more links" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="social-icon-link">
+          <img src="https://upload.wikimedia.org/wikipedia/en/b/bf/Linktree_logo.svg" 
+               alt="Linktree icon" 
+               class="social-icon-svg">
+      </a>
+  </li>
+</ul>
+<ul>
+  <!-- <li><a href="https://troubleinmindrecords.com/products/nightshift-made-of-the-earth-cs">Trouble in Mind Records</a></li> -->
+
+  <!-- <li><a href="https://bsky.app/profile/nightshiftband.bsky.social">Nightshift on Bluesky</a></li>
 
   <li><a href="https://nightshiftgroup.bandcamp.com/">Nightshift on Bandcamp</a></li>
   <li><a href="https://www.instagram.com/wearethebandcallednightshift/">Nightshift's Instagram</a></li>
   <li><a href="https://twitter.com/Nightshiftgroup">Nightshift on 🍆 🚀</a></li>
-  <li><a href="https://www.facebook.com/nightshiftisaband/">Nightshift on Meta's Facebook</a></li>
-  <li><a href="https://linktr.ee/nightshiftensemble">Nightshift's LinkTree for more links</a></li>
-</ul>
-
+  <li><a href="https://www.facebook.com/nightshiftisaband/">Nightshift on Meta's Facebook</a></li> -->
+  <!-- <li><a href="https://linktr.ee/nightshiftensemble">Nightshift's LinkTree for more links</a></li> -->
+</ul> 
 
 </body>
   
