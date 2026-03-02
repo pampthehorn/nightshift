@@ -131,6 +131,85 @@ max-width: 100%;
             }
         }
 
+.discography {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+.release {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.release:last-child {
+  border-bottom: none;
+}
+
+.release-art {
+  flex-shrink: 0;
+}
+
+.release-art img {
+  width: 300px;
+  max-width: 100%;
+  display: block;
+}
+
+.release-info {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+.release-info h3 {
+  margin: 0 0 5px 0;
+}
+
+.release-info .release-meta {
+  color: #555;
+  margin: 0 0 12px 0;
+  font-size: 0.9em;
+}
+
+.tracklist {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+
+.tracklist li {
+  padding: 2px 0;
+  background-color: transparent;
+}
+
+.tracklist li span.duration {
+  color: #888;
+}
+
+.credits {
+  font-size: 0.85em;
+  color: #555;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .release-info {
+    text-align: center;
+  }
+  .tracklist {
+    text-align: left;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+}
+
 </style>
 
 </head>
@@ -138,6 +217,7 @@ max-width: 100%;
 <body>
 <h1 style="display:none">NIGHTSHIFT</h1>
 <img src="nightshift-glasgow-band-logo-ag.png" class='logo' alt="nightshift glasgow band text logo" />
+<p>Glasgow Music Ensemble</p>
 <div>nightshiftensemble@gmail.com</div>
 
 <div id="posters" class="flex">
@@ -164,7 +244,7 @@ max-width: 100%;
 
 
 
-<h3>New AA side single <strong>Dice/Firefly</strong> out now!</h3>
+<!-- <h3>New AA side single <strong>Dice/Firefly</strong> out now!</h3> -->
 
 <!-- <iframe style="border: 0; width: 350px; height: 786px;"
   src="https://bandcamp.com/EmbeddedPlayer/album=163025827/size=large/bgcol=ffffff/linkcol=f171a2/transparent=true/"
@@ -174,10 +254,154 @@ max-width: 100%;
   title="YouTube video player" frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p> -->
-<div><iframe style="border: 0; width: 500px; max-width:100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2712693059/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://nightshiftgroup.bandcamp.com/album/dice-firefly">Dice / Firefly by Nightshift</a></iframe></div>
- <p>Please consider making a donation direct to  <a href="https://childrennotnumbers.org" target="_blank">Children Not Numbers</a>, who are on the ground, providing immediate aid and working towards sustainable solutions for the children of Gaza.</p>
+<!-- <div><iframe style="border: 0; width: 500px; max-width:100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2712693059/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://nightshiftgroup.bandcamp.com/album/dice-firefly">Dice / Firefly by Nightshift</a></iframe></div>
+ <p>Please consider making a donation direct to  <a href="https://childrennotnumbers.org" target="_blank">Children Not Numbers</a>, who are on the ground, providing immediate aid and working towards sustainable solutions for the children of Gaza.</p> -->
 
+<div class="discography">
+<!-- <h2>Discography</h2> -->
 
+<!-- Dice / Firefly (2025) -->
+<div class="release">
+  <a href="https://nightshiftgroup.bandcamp.com/album/dice-firefly" target="_blank" class="release-art">
+    <img src="https://f4.bcbits.com/img/a1169135950_10.jpg" alt="Dice / Firefly album cover" />
+  </a>
+  <div class="release-info">
+    <h3>Dice / Firefly</h3>
+    <p class="release-meta">2025 &middot; AA single</p>
+    <iframe style="border: 0; width: 100%; max-width: 350px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2712693059/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless></iframe>
+    <ol class="tracklist">
+      <li>Dice <span class="duration">2:49</span></li>
+      <li>Firefly <span class="duration">3:00</span></li>
+    </ol>
+    <div class="credits">
+      Andrew Robert Doig &ndash; guitar<br>
+      Chris White &ndash; guitar<br>
+      Eothen Stearn &ndash; vocals, synthesisers<br>
+      Joan Sweeney &ndash; violin, vocals<br>
+      Nic Miller &ndash; vocals<br>
+      Rob Alexander &ndash; drums, xaphoon
+    </div>
+  </div>
+</div>
+
+<!-- Homosapien (2024) -->
+<div class="release">
+  <a href="https://nightshiftgroup.bandcamp.com/album/homosapien" target="_blank" class="release-art">
+    <img src="https://f4.bcbits.com/img/a4209568970_10.jpg" alt="Homosapien album cover" />
+  </a>
+  <div class="release-info">
+    <h3>Homosapien</h3>
+    <p class="release-meta">2024 &middot; Trouble In Mind Records</p>
+    <iframe style="border: 0; width: 100%; max-width: 350px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=163025827/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless></iframe>
+    <ol class="tracklist">
+      <li>Crystal Ball <span class="duration">3:04</span></li>
+      <li>Sure Look <span class="duration">2:48</span></li>
+      <li>Together We Roll <span class="duration">2:34</span></li>
+      <li>S.U.V. <span class="duration">3:31</span></li>
+      <li>Your Good Self <span class="duration">1:57</span></li>
+      <li>Cut <span class="duration">2:55</span></li>
+      <li>Side Effects <span class="duration">3:32</span></li>
+      <li>Phone <span class="duration">3:10</span></li>
+      <li>Y.T. Tutorial <span class="duration">2:24</span></li>
+      <li>Mellow Baby <span class="duration">2:40</span></li>
+      <li>Crush <span class="duration">3:26</span></li>
+    </ol>
+    <div class="credits">
+      Eothen Stearn &ndash; voice, keys, snare, percussion<br>
+      Chris White &ndash; guitar, voice, drums<br>
+      Andrew Doig &ndash; bass, voice, melodica<br>
+      Rob Alexander &ndash; drums, accordion, tin whistle<br>
+      <em>Ray Aggs &ndash; fiddle; Chris Wallace &ndash; trombone</em><br>
+      Recorded/mixed by Nightshift &middot; Mastered by Mikey Young &middot; Artwork by Anthony Gerace
+    </div>
+  </div>
+</div>
+
+<!-- Made Of The Earth (2022) -->
+<div class="release">
+  <a href="https://nightshiftgroup.bandcamp.com/album/made-of-the-earth" target="_blank" class="release-art">
+    <img src="https://f4.bcbits.com/img/a1542307153_10.jpg" alt="Made Of The Earth album cover" />
+  </a>
+  <div class="release-info">
+    <h3>Made Of The Earth</h3>
+    <p class="release-meta">2022 &middot; Trouble In Mind Records</p>
+    <iframe style="border: 0; width: 100%; max-width: 350px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=515465482/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless></iframe>
+    <ol class="tracklist">
+      <li>Hologram <span class="duration">4:54</span></li>
+      <li>Flower <span class="duration">3:43</span></li>
+      <li>Supermarket <span class="duration">3:06</span></li>
+      <li>Made Of The Earth <span class="duration">4:23</span></li>
+      <li>Horseshoe <span class="duration">3:23</span></li>
+      <li>Locked Out <span class="duration">3:07</span></li>
+      <li>Trousers <span class="duration">3:17</span></li>
+      <li>Souvenir <span class="duration">3:06</span></li>
+      <li>Landlord <span class="duration">2:30</span></li>
+      <li>Bric a Brac <span class="duration">3:00</span></li>
+      <li>Stimuli <span class="duration">3:23</span></li>
+      <li>The Painting You Live With <span class="duration">4:29</span></li>
+    </ol>
+  </div>
+</div>
+
+<!-- Zöe (2021) -->
+<div class="release">
+  <a href="https://nightshiftgroup.bandcamp.com/album/z-e" target="_blank" class="release-art">
+    <img src="https://f4.bcbits.com/img/a3297341145_10.jpg" alt="Zöe album cover" />
+  </a>
+  <div class="release-info">
+    <h3>Z&ouml;e</h3>
+    <p class="release-meta">2021 &middot; Trouble In Mind Records</p>
+    <iframe style="border: 0; width: 100%; max-width: 350px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2967321951/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless></iframe>
+    <ol class="tracklist">
+      <li>Piece Together <span class="duration">3:34</span></li>
+      <li>Spray Paint The Bridge <span class="duration">4:00</span></li>
+      <li>Outta Space <span class="duration">3:29</span></li>
+      <li>Make Kin <span class="duration">3:51</span></li>
+      <li>Fences <span class="duration">3:48</span></li>
+      <li>Power Cut <span class="duration">7:00</span></li>
+      <li>Infinity Winner <span class="duration">3:40</span></li>
+      <li>Romantic Mud <span class="duration">2:23</span></li>
+      <li>Z&ouml;e <span class="duration">2:58</span></li>
+      <li>Receipts <span class="duration">2:46</span></li>
+    </ol>
+    <div class="credits">
+      Eothen Stearn &ndash; vocals, keyboards<br>
+      Georgia Harris &ndash; vocals, guitar, clarinet, bottles<br>
+      David Campbell &ndash; guitar<br>
+      Chris White &ndash; drums, vocals<br>
+      Andrew Doig &ndash; bass, vocals<br>
+      Mixed by Chris White &middot; Mastered by Mikey Young
+    </div>
+  </div>
+</div>
+
+<!-- s/t (2020) -->
+<div class="release">
+  <a href="https://nightshiftgroup.bandcamp.com/album/s-t" target="_blank" class="release-art">
+    <img src="https://f4.bcbits.com/img/a3053821432_10.jpg" alt="Nightshift s/t album cover" />
+  </a>
+  <div class="release-info">
+    <h3>s/t</h3>
+    <p class="release-meta">2020</p>
+    <iframe style="border: 0; width: 100%; max-width: 350px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=596995567/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless></iframe>
+    <ol class="tracklist">
+      <li>Rosary <span class="duration">4:07</span></li>
+      <li>I Don't Mind <span class="duration">3:42</span></li>
+      <li>Flat Earther <span class="duration">5:53</span></li>
+      <li>Doorstep <span class="duration">2:45</span></li>
+      <li>Merci David <span class="duration">6:37</span></li>
+      <li>Sleep <span class="duration">4:46</span></li>
+      <li>Radio <span class="duration">2:48</span></li>
+      <li>Describe Your Day <span class="duration">5:22</span></li>
+    </ol>
+    <div class="credits">
+      Eo, Chris, Georgia, David, Andrew<br>
+      Recorded by Chris White in Bridgeton, Summer 2019
+    </div>
+  </div>
+</div>
+
+</div>
 
 <div style="display:none">
 <h5>Appeared already:</h5>
